@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <title>Ояту.kz</title>
+</head>
+
+<body onload="showTime()">
+    <div class="wrapper">
+        <header class="header">
+            <nav class="menu">
+                <div class="left-menu">
+                    <a href="#">Разбуди.kz</a>
+                </div>
+                <div class="right-menu">
+                    <a >12-часовый формат</a>
+                    <a  class = "hidedate">Скрыть дату</a>
+                    <a  class = "showdate">Показать дату</a>
+                    <a  class = "dark">Темный режим</a>
+                    <a  class = "light">Светлый режим</a>
+                    <a href="indexx.html">RU</a>
+                    <a href="kz.html">KZ</a>
+                </div>
+            </nav>
+        </header>
+
+      
+
+
+         <!--Будильник-->
+        <div class="alarm">
+            <div class="alarm-time">    
+            <h1 id = "current-time"></h1>
+		</div>
+
+
+            <div class="alarm-date">
+                <script language="javascript" type="text/javascript">
+					var d = new Date();
+					var day=new Array("Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота");
+					var month=new Array("января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря");
+						document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]+ " " + d.getFullYear() + " г.");</script>
+            </div>
+            <a class="btn">Поставить будильник</a>
+		</div>
+
+	<div class = "activity">
+		<div id = "mybox">
+			<div id = "time">00:00:00</div>
+			<br>
+			<h3>Установите время будильника</h3>
+			<select name ="" id = "hours"></select>
+			<select name ="" id = "minutes"></select>
+			<select name ="" id = "seconds"></select>
+			<br><br>
+			<div id = "myDiv">
+				<label for = "">Выберите звук будильника</label>
+				<br>
+				<select name ="" id = "sound"></select>
+			</div>
+			<button id = "setButton">Установить будильник</button>
+			<button id = "clearButton">Удалить будильник</button>
+		</div>
+	</div>
+
+	
+
+
+        <!--Таймер-->
+        <div class="timer">
+            <div class="timer-time">
+                00:00:00
+            </div>
+            <a href="#" class="btn">Установить таймер</a>
+        </div>
+
+        <!--Секундомер-->
+        <div class="stopwatch">
+            <div class="stopwatch-time">
+                00:00<span>:00</span>
+            </div>
+            <div class="stopwatch-btn">
+                <a href="#" class="danger">Сброс</a>
+                <a href="#" class="success">Старт</a>
+            </div>
+        </div>
+
+        <!--Точное-время-->
+        <div class="exact-time">
+            <div class="exact-time-time">
+                16: 05: 00
+            </div>
+            <div class="exact-time-date">
+                <script language="javascript" type="text/javascript">
+					var d = new Date();
+					var day=new Array("Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота");
+					var month=new Array("января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря");
+						document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]+ " " + d.getFullYear() + " г.");</script>
+            </div>
+            </div>
+        </div>
+
+        <div class="sections">
+            <!--Будильник-->
+            <div class="alarm-section active">
+               <img src="images/alarm.png" alt="alarm">
+                <div class="name">Будильник</div>
+            </div>
+
+            <!--Таймер-->
+            <div class="timer-section">
+                <img src="images/timer.png" alt="timer">
+                <div class="name">Таймер</div>
+            </div>
+
+            <!--Секундомер-->
+            <div class="stopwatch-section">
+                <img src="images/stopwatch.png" alt="stopwatch">
+                <div class="name">Секундомер</div>
+            </div>
+
+            <!--Точное-время-->
+            <div class="exact-time-section">
+                <img src="images/clock.png" alt="clock">
+                <div class="name">Точное время</div>
+            </div>
+        </div>
+
+        <div class="instruction-block1 ">
+            <h5 class="instruction-paragraph">Как пользоваться онлайн будильником</h5>
+            <p class="instruction-text">Установите часы и минуты онлайн будильника, и в назначенное время появится
+                сообщение о будильнике и будет
+                проигран выбранный ранее звуковой сигнал.
+            </p>
+            <p class="instruction-text">При установке будильника вы можете нажать кнопку «Тест», чтобы увидеть как будет
+                выглядеть оповещение о
+                будильнике и с какой громкостью будет играть музыка.
+            </p>
+            <p class="instruction-text">Вы можете настроить оформление будильника (цвет, тип и размер надписей), и эти
+                настройки сохранятся и
+                будут использованы при следующем открытии вашего браузера.
+            </p>
+            <p class="instruction-text">Онлайн будильник не сработает, если закрыть браузер или выключить компьютер, но
+                может работать без
+                подключения к сети Интернет.
+            </p>
+            <p class="instruction-text">Вы можете добавить в избранное браузера ссылки на онлайн будильник с разными
+                настройками времени. Когда
+                вы откроете нужную ссылку, будильник сразу установится на определенное ранее время.</p>
+        </div>
+
+        <div class="instruction-block2">
+            <h5 class="instruction-paragraph">Как пользоваться онлайн таймером</h5>
+            <p class="instruction-text">Выберите часы, минуты и секунды для онлайн таймера и запустите его. Или установите дату и время таймера, до которого (или с которого) нужно отсчитывать дни, часы, минуты и секунды. В назначенное время появится сообщение о сработавшем таймере и будет проигран выбранный ранее звуковой сигнал.
+            </p>
+            <p class="instruction-text">При установке таймера вы можете нажать кнопку «Тест», чтобы увидеть как будет выглядеть оповещение о таймере и с какой громкостью будет играть музыка.
+            </p>
+            <p class="instruction-text">Нажмите кнопку «Сброс», чтобы запустить таймер с начального значения. Нажмите кнопку «Стоп» или «Старт», чтобы остановить или запустить таймер.
+            </p>
+            <p class="instruction-text">Вы можете добавить в избранное браузера ссылки на онлайн таймер с разными настройками времени. Когда вы откроете нужную ссылку, таймер сразу установится на определенное ранее время.
+            </p>
+            <p class="instruction-text">В списке праздников вы можете открыть таймер обратного отсчета для любого праздника из списка, или можете создать свой новый таймер для своего события или праздника. Не забудьте поделиться вашим таймером с друзьями.</p>
+        </div>
+
+        <div class="instruction-block3">
+            <h5 class="instruction-paragraph">Как пользоваться онлайн секундомером</h5>
+            <p class="instruction-text">Онлайн секундомер отсчитывает время с точностью до миллисекунды после нажатия кнопки «Старт». Позволяет добавлять круги. Сохраняет показания секундомера и кругов после закрытия. При больших значениях отображает прошедшие дни.
+            </p>
+            <p class="instruction-text">В настройках секундомера вы можете выбрать с какой точностью показывать доли секунд.
+            </p>
+            <p class="instruction-text">Нажмите кнопку «Старт» или «Стоп», чтобы запустить или остановить секундомер. Нажмите кнопку «Круг», чтобы добавить один круг и текущее значение секундомера в список кругов. Для обнуления кругов и значения секундомера нажмите кнопку «Сброс» (кнопка появляется при остановленном секундомере).
+            </p>
+            <p class="instruction-text">Вы можете настроить оформление секундомера (цвет, тип и размер надписей), и эти настройки сохранятся и будут использованы при следующем открытии вашего браузера.
+            </p>
+            <p class="instruction-text">Вы можете добавить в избранное браузера ссылки на онлайн секундомеры с разными показаниями времени и списком кругов.</p>
+        </div>
+
+
+    <div class = "cards">
+        <div class="card1">
+	  <img src="https://all-aforizmy.ru/wp-content/uploads/2022/03/moskva-dnr.jpg" alt="img" width="250" height="150">
+	  <div class="text">
+	    <h2> Москва </h2>
+<!-- clock widget start -->
+<script type="text/javascript"> var css_file=document.createElement("link"); css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href","https://s.bookcdn.com//css/cl/bw-cl-sm2.css?v=0.0.1"); document.getElementsByTagName("head")[0].appendChild(css_file); </script> <div id="tw_25_1843653574"><div style="width:200px; height:px; margin: 0 auto;"><a href="https://nochi.com/time/moscow-18171">Москва</a><br/></div></div> <script type="text/javascript"> function setWidgetData_1843653574(data){ if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = ''; var params = data.results[i]; objMainBlock = document.getElementById('tw_'+params.widget_type+'_'+params.widget_id); if(objMainBlock !== null) objMainBlock.innerHTML = params.html_code; } } } var clock_timer_1843653574 = -1; widgetSrc = "https://widgets.booked.net/time/info?ver=2;domid=589;type=25;id=1843653574;scode=;city_id=18171;wlangid=20;mode=1;details=0;background=ffffff;border_color=ffffff;color=000000;add_background=ffffff;add_color=333333;head_color=ffffff;border=1;transparent=0"; var widgetUrl = location.href; widgetSrc += '&ref=' + widgetUrl; var wstrackId = ""; if (wstrackId) { widgetSrc += ';wstrackId=' + wstrackId + ';' } var timeBookedScript = document.createElement("script"); timeBookedScript.setAttribute("type", "text/javascript"); timeBookedScript.src = widgetSrc; document.body.appendChild(timeBookedScript); </script>
+<!-- clock widget end -->
+
+</div></div>
+
+   <div class="card2">
+	  <img src="https://avatars.dzeninfra.ru/get-zen_doc/2431229/pub_5ec4e4b8d921c9187a770558_5ec4e4ba4e183c2f7f55afc1/scale_1200" alt="img" width="250" height="150">
+	  <div class="text">
+	  	<h2> Париж </h2>
+	  	<!-- clock widget start -->
+<script type="text/javascript"> var css_file=document.createElement("link"); css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href","https://s.bookcdn.com//css/cl/bw-cl-sm2.css?v=0.0.1"); document.getElementsByTagName("head")[0].appendChild(css_file); </script> <div id="tw_25_1434267612"><div style="width:200px; height:px; margin: 0 auto;"><a href="https://nochi.com/time/paris-18145">Париж</a><br/></div></div> <script type="text/javascript"> function setWidgetData_1434267612(data){ if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = ''; var params = data.results[i]; objMainBlock = document.getElementById('tw_'+params.widget_type+'_'+params.widget_id); if(objMainBlock !== null) objMainBlock.innerHTML = params.html_code; } } } var clock_timer_1434267612 = -1; widgetSrc = "https://widgets.booked.net/time/info?ver=2;domid=589;type=25;id=1434267612;scode=;city_id=18145;wlangid=20;mode=1;details=0;background=ffffff;border_color=ffffff;color=000000;add_background=ffffff;add_color=333333;head_color=ffffff;border=1;transparent=0"; var widgetUrl = location.href; widgetSrc += '&ref=' + widgetUrl; var wstrackId = ""; if (wstrackId) { widgetSrc += ';wstrackId=' + wstrackId + ';' } var timeBookedScript = document.createElement("script"); timeBookedScript.setAttribute("type", "text/javascript"); timeBookedScript.src = widgetSrc; document.body.appendChild(timeBookedScript); </script>
+<!-- clock widget end -->
+</div></div>
+
+<div class="card3">
+	  <img src="https://pbs.twimg.com/media/D-EdgVRXkAUrOIg.jpg" alt="img" width="250" height="150">
+	  <div class="text">
+	    <h2> Сеул </h2>
+	    <!-- clock widget start -->
+<script type="text/javascript"> var css_file=document.createElement("link"); css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href","https://s.bookcdn.com//css/cl/bw-cl-sm2.css?v=0.0.1"); document.getElementsByTagName("head")[0].appendChild(css_file); </script> <div id="tw_25_409169584"><div style="width:200px; height:px; margin: 0 auto;"><a href="https://nochi.com/time/seoul-18406">Сеул</a><br/></div></div> <script type="text/javascript"> function setWidgetData_409169584(data){ if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = ''; var params = data.results[i]; objMainBlock = document.getElementById('tw_'+params.widget_type+'_'+params.widget_id); if(objMainBlock !== null) objMainBlock.innerHTML = params.html_code; } } } var clock_timer_409169584 = -1; widgetSrc = "https://widgets.booked.net/time/info?ver=2;domid=589;type=25;id=409169584;scode=;city_id=18406;wlangid=20;mode=1;details=0;background=ffffff;border_color=ffffff;color=000000;add_background=ffffff;add_color=333333;head_color=ffffff;border=1;transparent=0"; var widgetUrl = location.href; widgetSrc += '&ref=' + widgetUrl; var wstrackId = ""; if (wstrackId) { widgetSrc += ';wstrackId=' + wstrackId + ';' } var timeBookedScript = document.createElement("script"); timeBookedScript.setAttribute("type", "text/javascript"); timeBookedScript.src = widgetSrc; document.body.appendChild(timeBookedScript); </script>
+<!-- clock widget end -->
+</div></div>
+
+  <div class="card4">
+	  <img src="https://get.wallhere.com/photo/1920x1200-px-city-cityscape-clouds-landscape-mountains-New-Zealand-Queenstown-sea-992563.jpg" alt="img" width="250" height="150">
+	  <div class="text">
+	    <h2>Новая Зеландия</h2>
+
+<script type="text/javascript"> var css_file=document.createElement("link"); css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href","https://s.bookcdn.com//css/cl/bw-cl-sm2.css?v=0.0.1"); document.getElementsByTagName("head")[0].appendChild(css_file); </script> <div id="tw_25_166461376"><div style="width:200px; height:px; margin: 0 auto;"><a href="https://nochi.com/time/new-zealand-w2822885">New Zealand</a><br/></div></div> <script type="text/javascript"> function setWidgetData_166461376(data){ if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = ''; var params = data.results[i]; objMainBlock = document.getElementById('tw_'+params.widget_type+'_'+params.widget_id); if(objMainBlock !== null) objMainBlock.innerHTML = params.html_code; } } } var clock_timer_166461376 = -1; widgetSrc = "https://widgets.booked.net/time/info?ver=2;domid=589;type=25;id=166461376;scode=;city_id=w2822885;wlangid=20;mode=1;details=0;background=ffffff;border_color=ffffff;color=000000;add_background=ffffff;add_color=333333;head_color=ffffff;border=1;transparent=0"; var widgetUrl = location.href; widgetSrc += '&ref=' + widgetUrl; var wstrackId = ""; if (wstrackId) { widgetSrc += ';wstrackId=' + wstrackId + ';' } var timeBookedScript = document.createElement("script"); timeBookedScript.setAttribute("type", "text/javascript"); timeBookedScript.src = widgetSrc; document.body.appendChild(timeBookedScript); </script>
+</div></div></div></div>
+</div><!--wrapper-->
+<script src="js/app.js"></script>
+</body>
+
+	<script>
+			function showTime(){
+				var d =new Date();
+				var h = d.getHours();
+				var m = d.getMinutes();
+				var s = d.getSeconds();
+				var time = h + ":" + m + ":"+s;
+				document.getElementsByTagName('h1')[0].innerText = time;
+				setTimeout(showTime,1000)
+			}
+		</script>
+
+</html>
+
+
+
+
+

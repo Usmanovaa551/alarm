@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 15px;
+    font-size: 24px;
+    font-weight: bold;
+    background: #72E270;
+    border-radius: 20px;
+    transition: .8s ease;
+    color: #fff;
+}
+
+.btn:hover {
+    color: #000;
+}
+
+/*--------------------------------------------------------------------Шапка--------------------------------------------------------------------*/
+.header {
+    background: linear-gradient(#7F83BC, #44A0CA, transparent 90%);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 25px 0 40px 0;
+}
+
+.left-menu {
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+.right-menu {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.left-menu a,
+.right-menu a {
+    font-size: 24px;
+    color: #fff;
+    transition: 1s ease;
+}
+
+.left-menu a:hover,
+.right-menu a:hover {
+    color: #000;
+}
+
+.right-menu a {
+    margin-left: 20px;
+}
+
+/*--*/
+
+/*--------------------------------------------------------------------Будильник--------------------------------------------------------------------*/
+.alarm {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    display: block;
+}
+
+.alarm-time {
+    font-size: 128px;
+    font-weight: bold;
+}
+
+.alarm-date {
+    font-size: 32px;
+}
+
+.alarm .btn {
+    margin-top: 50px;
+}
+
+/*--*/
+
+/*--------------------------------------------------------------------Таймер--------------------------------------------------------------------*/
+.timer {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    display: none;
+}
+
+.timer-time {
+    font-size: 96px;
+    font-weight: normal;
+}
+
+.timer .btn {
+    margin-top: 50px;
+}
+
+/*--*/
+
+/*--------------------------------------------------------------------Секундомер--------------------------------------------------------------------*/
+.stopwatch {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    display: none;
+}
+
+.stopwatch-time {
+    font-size: 96px;
+    font-weight: normal;
+}
+
+.stopwatch-time span {
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.stopwatch-btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.danger {
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 20px;
+    background: #DD556D;
+    text-align: center;
+    margin-right: 15px;
+    transition: .8s ease;
+    color: #fff;
+}
+
+.success {
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    background: #72E270;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 15px;
+    transition: .8s ease;
+    color: #fff;
+}
+
+.danger:hover,
+.success:hover {
+    color: #000;
+}
+
+/*--*/
+
+/*--------------------------------------------------------------------Точное-время--------------------------------------------------------------------*/
+.exact-time {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+    display: none;
+}
+
+.exact-time-time {
+    font-size: 128px;
+    font-weight: bold;
+}
+
+.exact-time-date {
+    font-size: 32px;
+}
+
+/*--*/
+
+/*--------------------------------------------------------------------Секции--------------------------------------------------------------------*/
+.sections {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.name {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+
+.alarm-section img,
+.timer-section img,
+.stopwatch-section img,
+.exact-time-section img {
+    padding: 0 10px;
+}
+
+.alarm-section:hover,
+.timer-section:hover,
+.stopwatch-section:hover,
+.exact-time-section:hover {
+    cursor: pointer;
+}
+
+.active {
+    background: linear-gradient(to top, #C6E2F4, #ffffff, transparent 70%);
+}
+
+/*--*/
+
+/*--------------------------------------------------------------------Инструкция--------------------------------------------------------------------*/
+.instruction-block1,.instruction-block2,.instruction-block3 {
+    margin-top: 80px;
+    padding: 0 20px 50px 20px;
+    background: linear-gradient(to top, #3BA0CA, #ffffff);
+}
+.instruction-block1{
+    display: block;
+}
+.instruction-block2,.instruction-block3 {
+    display: none;
+}
+.instruction-paragraph {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.instruction-text {
+    font-size: 20px;
+    font-weight: normal;
+}
+.hidethedate, .showdate{
+    display: none;
+}
+.light{
+    display: none;
+}
+.card1 {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+     width: 30%;
+     text-align: center;
+    }
+
+    .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+   .text {
+     padding: 2px 3px;
+   }
+   .cards{
+    display: flex;
+   }
+
+   .card2 {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+     width: 30%;
+     text-align: center;
+    }
+
+    .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+   .text {
+     padding: 2px 3px;
+   }
+
+   .card3 {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+     width: 30%;
+     text-align: center;
+    }
+
+    .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+   .text {
+     padding: 2px 3px;
+   }
+
+   .card4 {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+     width: 30%;
+     text-align: center;
+    }
+
+    .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+   .text {
+     padding: 2px 3px;
+   }
+.card1,.card2,.card3,.card4{
+    display: none;
+}
+.overlay{
+    display: none;
+}
+#clock {
+    height:120px;
+    font-size: 40px;
+    font-family: arial;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  color: white;
+}
+
+h2 {
+    text-align:center;
+  
+
+}
+h1{
+    font-size: 150px;
+}
+.activity{
+    font-family: monospace, sans-serif;
+    font-size: 500px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 60%;
+    max-width: 30em;
+    margin:0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+#mybox{
+    width: 70%;
+    box-sizing: border-box;
+    border-collapse: : solid 5px #969d99;
+    height: 380px;
+    border: 5%
+    padding-top: 85px;
+    margin-top: 90px;
+    background: linear-gradient(#7F83BC, #44A0CA, transparent 90%);
+    text-align: center;
+    color: white;
+}
+
+#time{
+    font-size: 100px;
+    font: 65px;
+    margin-top: -65px;
+}
+h3{
+    color:#6edf04;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+#hours, #minutes, #seconds, #sound{
+    width: 20%;
+    padding: 10px,20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button{
+    width:50%;
+    background-color: #72E270;
+    color:white;
+    padding: 14px 10px;
+    margin: 10px 0;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+#clearButton{
+    background-color: red;
+    width:50%;
+    color:white;
+    padding: 14px 10px;
+    margin: 10px 0;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+button:hover{
+    background-color: #;
+}
+
+
+
